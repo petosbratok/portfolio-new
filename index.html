@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -22,7 +23,22 @@
           <a target="_blank" class="header-mail-link" href="mailto:some-mail@mail.ru">opletaevpetr@mail.ru</a>
         </div>
     </header>
-    <div class="who">
+    <nav>
+      <button style="display: block;" id="nav-button" class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="ul-container hidden">
+        <ul>
+          <li><a onclick="scrollNavSmoothTo('home'); hamburgerClose()" class="nav-link nav-home">HOME</a></li>
+          <li><a onclick="scrollNavSmoothTo('front-end'); hamburgerClose()" class="nav-link nav-home">FRONT-END</a></li>
+          <li><a onclick="scrollNavSmoothTo('back-end'); hamburgerClose()" class="nav-link nav-home">BACK-END</a></li>
+          <li><a onclick="scrollNavSmoothTo('contacts'); hamburgerClose()" class="nav-link nav-home">CONTACTS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="home" class="who">
         <h1 id="description"></h1>
         <h1>My name is Peter Opletaev.</h1>
         <p>I am a software developer based Russia. <br> Having done a great variety of projects, I can develop, optimise, redesign and update any kind of web-service either single-handedly or with a team of professionals.</p>

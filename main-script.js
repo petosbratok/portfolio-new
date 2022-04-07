@@ -10,3 +10,7 @@ sign.style.fontSize = "100px";
 //   sign_text.style.borderBottomColor = 'black';
 //   sign_text.style.fontSize= "50px";
 // };
+
+//side menu activation
+
+console.log('here')
