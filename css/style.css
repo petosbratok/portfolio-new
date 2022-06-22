@@ -447,7 +447,7 @@ li > a:hover::before {
 #cell-2{background-color: #648de5;}
 #cell-3{background-color: #a390ec;
   margin-right: 140px;}
-#cell-4{display: none; background-color: #fed0d0;}
+#cell-4{background-color: #d6eeff;}
 /* #cell-5{background-color: #a390ec;} */
 #cell-2 a, #cell-3 a{
   color: #393939;
