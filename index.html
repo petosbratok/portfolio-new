@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Peter Opletaev software engineer</title>
+    <link rel="icon" href="pics/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="panel intro">
+      <div class="info-nav">
+        <div class="info">
+          <h2>Peter Opletaev</h2>
+          <p>Automation & software engineer</p>
+        </div>
+        <div class="nav-container">
+          <ul>
+            <li><a class="nav-link" onclick="scrollSmoothTo('python-panel')">Python</a></li>
+            <li><a class="nav-link" onclick="scrollSmoothTo('django-panel')">Django</a></li>
+            <li><a class="nav-link" href="#">Data Science</a></li>
+            <li><a class="nav-link" href="#">Engineering</a></li>
+            <li><a class="nav-link" href="#">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="description">
+        <div class="text">
+          <p>Hi! My name is Peter.</p>
+          <p>I am a software developer based in Russia. Having done a great variety of projects, I can develop, optimise, redesign and update any kind of web-service either single-handedly or with a team of professionals.</p>
+        </div>
+      </div>
+    </div>
+    <div id ="python-panel" class="panel python">
+      <div class="projects">
+        <h3 class="project-title panel-title" id="title-0">Python</h3>
+        <h3 class="project-title" id="title-1">2048</h3>
+        <h3 class="project-title" id="title-2">Twitch bot</h3>
+        <h3 class="project-title" id="title-3">Telegram bots</h3>
+        <h3 class="project-title" id="title-4">Text encryption tool</h3>
+      </div>
+      <div class="">
+        <div class="topic-description" id="topic-0">
+          <div class="">
+            <p class="main">I have been learning Python for several years.</p>
+            <p>During this time I have worked with various API services, including Telegram, Strava, and Twitch.</p>
+            <p>I have developed a number of console applications that perform various tasks, such as file encryption, the game 2048, a Twitch bot that performs asynchronous tasks, and many more!</p>
+          </div>
+        </div>
+        <div class="topic-description" id="topic-1" style="opacity: 0;">
+          <div class="">
+            <p class="main">Classic 2048 game written in plain Python 3.7 with command-line interface. </p>
+            <p>All of the game's rules are implemented. Player controlls the game by pressing WASD</p>
+            <p>Grid size can be modified.</p>
+          </div>
+          <div class="skills">
+            <span>Dynamic programming</span>
+            <span>Matrix operations</span>
+            <span>OOP</span>
+          </div>
+          <a class="topic-link" href="https://github.com/petosbratok/python-projects/tree/master/2048">Download on GitHub</a>
+        </div>
+        <div class="topic-description" id="topic-2" style="opacity: 0;">
+          <div class="">
+            <p class="main">Twitch bot that lets your twitch chat control your keyboard while streaming.</p>
+            <p>Uses API provided by twitch. Program gets a continious stream of data by using Socket library and multiple threads to be able to receive data and run commands simultaneously.</p>
+          </div>
+          <div class="skills">
+            <span>API</span>
+            <span>Socket</span>
+            <span>Threading</span>
+          </div>
+          <a class="topic-link" href="https://github.com/petosbratok/python-projects/tree/master/Twitch%20API">Download on GitHub</a>
+        </div>
+        <div class="topic-description" id="topic-3" style="opacity: 0;">
+          <div class="">
+            <p class="main">I've done multiple telegram bots with different purposes.</p>
+            <p>One of the is used for syncing Telegram and VK posts of a certain group.</p>
+            <p>Another one can create payment sessions by user's request then process and verify QIWI transactions while storing all the info in a DB.</p>
+          </div>
+          <div class="skills">
+            <span>API</span>
+            <span>Payments</span>
+            <span>Aiogram</span>
+            <span>Telebot</span>
+            <span>SQL</span>
+          </div>
+          <a class="topic-link" href="https://github.com/petosbratok/testtask03">Download on GitHub</a>
+        </div>
+        <div class="topic-description" id="topic-4" style="opacity: 0;">
+          <div class="">
+            <p class="main">Text encryption tool</p>
+            <p>This program with command-line interface uses Caesar cipther to encrypt and decrypt .txt files.</p>
+          </div>
+          <div class="skills">
+            <span>Encryption</span>
+            <span>Data processing</span>
+            <span>Dymanic programming</span>
+          </div>
+          <a class="topic-link" href="https://github.com/petosbratok/python-projects/tree/master/Crypto">Download on GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div id="django-panel" class="panel django">
+      <div class="projects">
+        <h3 class="project-title project-title-reversed panel-title" id="title-0">Django</h3>
+        <h3 class="project-title project-title-reversed" id="title-1">2048</h3>
+        <h3 class="project-title project-title-reversed" id="title-2">Twitch bot</h3>
+        <h3 class="project-title project-title-reversed" id="title-3">Telegram bots</h3>
+        <h3 class="project-title project-title-reversed" id="title-4">Text encryption tool</h3>
+      </div>
+      <div class="">
+        <div class="topic-description topic-info-reversed" id="topic-0">
+          <div class="">
+            <p class="main">I have been learning Python for several years.</p>
+            <p>During this time I have worked with various API services, including Telegram, Strava, and Twitch.</p>
+            <p>I have developed a number of console applications that perform various tasks, such as file encryption, the game 2048, a Twitch bot that performs asynchronous tasks, and many more!</p>
+          </div>
+        </div>
+        <div class="topic-description topic-info-reversed" id="topic-1" style="opacity: 0;">
+          <div class="">
+            <p class="main">Classic 2048 game written in plain Python 3.7 with command-line interface. </p>
+            <p>All of the game's rules are implemented. Player controlls the game by pressing WASD</p>
+            <p>Grid size can be modified.</p>
+          </div>
+          <div class="skills">
+            <span>Dynamic programming</span>
+            <span>Matrix operations</span>
+            <span>OOP</span>
+          </div>
+          <a class="topic-link" href="https://github.com/petosbratok/python-projects/tree/master/2048">Download on GitHub</a>
+        </div>
+        <div class="topic-description topic-info-reversed" id="topic-2" style="opacity: 0;">
+          <div class="">
+            <p class="main">Twitch bot that lets your twitch chat control your keyboard while streaming.</p>
+            <p>Uses API provided by twitch. Program gets a continious stream of data by using Socket library and multiple threads to be able to receive data and run commands simultaneously.</p>
+          </div>
+          <div class="skills">
+            <span>API</span>
+            <span>Socket</span>
+            <span>Threading</span>
+          </div>
+          <a class="topic-link" href="https://github.com/petosbratok/python-projects/tree/master/Twitch%20API">Download on GitHub</a>
+        </div>
+        <div class="topic-description topic-info-reversed" id="topic-3" style="opacity: 0;">
+          <div class="">
+            <p class="main">I've done multiple telegram bots with different purposes.</p>
+            <p>One of the is used for syncing Telegram and VK posts of a certain group.</p>
+            <p>Another one can create payment sessions by user's request then process and verify QIWI transactions while storing all the info in a DB.</p>
+          </div>
+          <div class="skills">
+            <span>API</span>
+            <span>Payments</span>
+            <span>Aiogram</span>
+            <span>Telebot</span>
+            <span>SQL</span>
+          </div>
+          <a class="topic-link" href="https://github.com/petosbratok/testtask03">Download on GitHub</a>
+        </div>
+        <div class="topic-description topic-info-reversed" id="topic-4" style="opacity: 0;">
+          <div class="">
+            <p class="main">Text encryption tool</p>
+            <p>This program with command-line interface uses Caesar cipther to encrypt and decrypt .txt files.</p>
+          </div>
+          <div class="skills">
+            <span>Encryption</span>
+            <span>Data processing</span>
+            <span>Dymanic programming</span>
+          </div>
+          <a class="topic-link" href="https://github.com/petosbratok/python-projects/tree/master/Crypto">Download on GitHub</a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="panel django">
+      <h2>Django</h2>
+    </div>
+    <div class="panel data-science">
+      <h2>Data Science</h2>
+    </div>
+    <div class="panel engineering">
+      <h2>Engineering</h2>
+    </div>
+    <div class="panel contacts">
+      <h2>Contacts</h2>
+    </div> -->
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</html>
