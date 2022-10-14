@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  color: var(--light-grey);
+  color: var(--dark-grey);
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
@@ -10,12 +10,20 @@ a{
 }
 :root {
   --dark-grey: #131313;
-  --light-grey: #E9E9E9;
+  --light-grey: #E1E1E1;
   --medium-grey: #353535;
 }
 
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
 body{
-  background: var(--dark-grey);
+  background: var(--light-grey);
   transition-duration: 0.3s;
 }
 
@@ -81,7 +89,7 @@ body{
 
 .nav-link:hover:after {
   width: 70%;
-  background: var(--light-grey);
+  background: var(--dark-grey);
 }
 
 .description{
@@ -96,10 +104,10 @@ body{
 }
 .description .text{
   padding: 40px;
-  /* background: var(--light-grey); */
+  /* background: var(--dark-grey); */
 }
 .description p{
-  /* color: var(--dark-grey) !important */
+  color: var(--light-grey) !important
 }
 .panel-title{
   font-size: 2em;
@@ -123,6 +131,7 @@ body{
   height: 100%;
 }
 .topic-description{
+  font-family: 'Nunito', sans-serif;
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -130,11 +139,14 @@ body{
   align-content: center;
   position: absolute;
   padding: 10px 100px;
+  padding-top: 0;
   font-size: 1.25em;
   transition-duration: 0.3s;
 }
 .topic-description p{
+  padding-left: 10px;
   margin-bottom: 5px;
+  font-family: 'Nunito', sans-serif;
 }
 .topic-link{
   text-align: center;
@@ -146,10 +158,10 @@ body{
   /* height: 70vh !important; */
 }
 #python-panel{
-  scroll-margin-top: 50px;
+  scroll-margin-top: 80px;
 }
 #django-panel{
-  scroll-margin-top: 50px;
+  scroll-margin-top: 80px;
 }
 .project-title{
   height: 15%;
@@ -176,32 +188,38 @@ body{
   background: #345995;
 }
 .topic-description .main{
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.75em;
   margin-bottom: 30px;
+  background: var(--light-grey);
+  transition-duration: 0.3s;
 }
 .django{
   /* height: 70vh !important; */
-  margin-top: 20vh;
+  /* margin-top: 20vh; */
   flex-direction: row-reverse;
 }
 .django .project-title{
-  color: var(--dark-grey);
+  color: var(--light-grey);
+}
+.django .main{
+  background: #adb9e3;
+  color: var(--light-grey);
 }
 .django #title-0{
   background: #adb9e3;
 }
 .django #title-1{
-  background: #c0c8da;
+  background: #adb9e3;
 }
 .django #title-2{
-  background: #d6d9cf;
+  background: #adb9e3;
 }
 .django #title-3{
-  background: #e7e6c7;
+  background: #adb9e3;
 }
 .django #title-4{
-  background: #FCF6BD;
+  background: #adb9e3;
 }
 .topic-info-reversed{
   left: 0;
@@ -214,4 +232,53 @@ body{
 .project-title-reversed:hover{
   margin-right: 0vw;
   margin-left: 0;
+}
+.data-science{
+  flex-direction: column;
+}
+.data-science .panel-title{
+  font-size: 3.5em;
+  background: #4f6d7a;
+  margin-bottom: 50px;
+  margin-right: 0;
+  width: 28vw;
+}
+.project-labels{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  /* margin-right: 5px; */
+}
+#ds-label{
+  /* background: black; */
+}
+.project-labels h3{
+  background: #4f6d7a;
+  width: 100%;
+  padding: 20px 5px;
+  height: 100%;
+  /* color: var(--light-grey); */
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+  transition-property: background;
+}
+.project-labels h3:hover{
+  background: #9ab2bd;
+  width: 100%;
+}
+.image-container{
+  height: 500px;
+  background-size: cover;
+}
+img{
+  height: 100%;
+}
+.ds-project{
+  display: flex;
+  flex-direction: row;
+}
+.ds-description{
+  margin-left: 50px;
 }

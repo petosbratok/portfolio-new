@@ -1,17 +1,23 @@
 var body = document.getElementsByTagName('body')[0];
 // trigger this function every time the user scrolls
-window.onscroll = function (event) {
-  python_deepness = window.pageYOffset + document.getElementById('python-panel').getBoundingClientRect().top - 100;
-  django_deepness = window.pageYOffset + document.getElementById('django-panel').getBoundingClientRect().top - 100;
-  var scroll = window.pageYOffset;
-  if (scroll >= python_deepness && scroll < django_deepness) {
-       body.style.backgroundColor = '#0b0e14';
-  } else if (scroll >= django_deepness){
-      body.style.backgroundColor = '#050a14';
-  } else {
-      body.style.backgroundColor = 'var(--dark-grey)';
-  }
-}
+// window.onscroll = function (event) {
+//   python_deepness = window.pageYOffset + document.getElementById('python-panel').getBoundingClientRect().top - 100;
+//   django_deepness = window.pageYOffset + document.getElementById('django-panel').getBoundingClientRect().top - 100;
+//   var scroll = window.pageYOffset;
+//   if (scroll >= python_deepness && scroll < django_deepness) {
+//        body.style.backgroundColor = '#0b0e14';
+//   } else if (scroll >= django_deepness){
+//       body.style.backgroundColor = '#050a14';
+//   } else {
+//       body.style.backgroundColor = 'var(--dark-grey)';
+//   }
+//
+//   if (scroll >= python_deepness){
+//     $('#python-panel .main').css("background-color", '#13293D');
+//   } else{
+//     $('#python-panel .main').css("background-color", 'var(--dark-grey)');
+//   }
+// }
 
 function scrollSmoothTo(elementId) {
   console.log(elementId)
