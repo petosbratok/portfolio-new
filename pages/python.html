@@ -10,18 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <style media="screen">
+      .project-info{
+        margin-top: 8vw;
+      }
+    </style>
   </head>
   <body>
     <div class="panel">
       <div class="info-nav">
         <div class="info">
-          <h2>Django</h2>
+          <h2>Python</h2>
           <p></p>
         </div>
         <div class="nav-container">
           <ul>
             <li><a class="nav-link" href="home.html">Home</a></li>
-            <li><a class="nav-link" href="python.html">Python</a></li>
+            <li><a class="nav-link" href="django.html">Django</a></li>
             <li><a class="nav-link" href="data-science.html">Data Science</a></li>
             <li><a class="nav-link" href="engineering.html">Engineering</a></li>
             <li><a class="nav-link" href="contacts.html">Contacts</a></li>
@@ -31,68 +36,56 @@
       <img onclick="scrollSmoothTo('intro')" class="arrow-icon rotate" src="../pics/arrow.png" alt="">
       <div class="description">
         <div class="text">
-          <p class="main">Throughout last year Django became my most powerful tool for creating web-projects</p>
-          <p>I have completed a number of projects in various directions, combined with many API's, sockets, node.js servers, payment systems</p>
+          <p class="main">Python is the best way of solving complicated problems with simple code.</p>
+          <p>During the years, I have made a number of applications of different use, worked with various API services, including Telegram, Strava, Twitch and VK.</p>
         </div>
       </div>
     </div>
     <main>
       <div id="intro" class="intro">
-        <h1>Django projects</h1>
+        <h1>Python projects</h1>
       </div>
       <div class="project">
         <div class="image-container">
-          <a href="https://github.com/petosbratok/merch-store" target="_blank"><img src="../pics/merchstore.png" alt="merch store link"></a>
+          <a href="https://github.com/petosbratok/testtask03" target="_blank"><img src="../pics/telegram.png" alt="Telegram bot link"></a>
         </div>
         <div class="project-info">
-          <h3 class="title"><a href="https://github.com/petosbratok/merch-store" target="_blank">Online store</a></h3>
-          <p>A fully functional e-commerce website for your goods with Stripe payments support, order info processing, inventory control.</p>
+          <h3 class="title"><a href="https://github.com/petosbratok/testtask03" target="_blank">Telegram payment bot</a></h3>
+          <p>This bot can create payment sessions by user's request then process and verify QIWI transactions. It has an admin panel that can send logs, info about user balances, bun and unban users.</p>
           <div class="skills">
-            <span>Django</span>
-            <span>REST API</span>
-            <span>PostgreSQL</span>
+            <span>Aiogram</span>
+            <span>MySQL</span>
             <span>Payments</span>
-            <span>AJAX</span>
-            <span>ORM</span>
-            <span>Mail notifications</span>
+            <span>logging</span>
           </div>
         </div>
       </div>
       <div class="project">
         <div class="image-container">
-          <a href="https://github.com/petosbratok/meme-dozer" target="_blank"><img src="../pics/memedozer.png" alt="meme-dozer link"></a>
+          <a href="https://github.com/petosbratok/python-projects/tree/master/Twitch%20API" target="_blank"><img src="../pics/twitch.png" alt="twitch link"></a>
         </div>
         <div class="project-info">
-          <h3 class="title"><a href="https://github.com/petosbratok/meme-dozer" target="_blank">Meme-sharing platform</a></h3>
-          <p>Twitter-like social network with all of its attributes: posts, accounts, likes, you named it! Comes with pinterest inspired post layout. </p>
+          <h3 class="title"><a href="https://github.com/petosbratok/python-projects/tree/master/Twitch%20API" target="_blank">Asynchronous twitch bot</a></h3>
+          <p class="main">Twitch bot that lets your twitch chat control your keyboard while streaming.</p>
+          <p>Program gets a continious stream of data by using Socket library and multiple threads to be able to receive data and run commands simultaneously.</p>
           <div class="skills">
-            <span>Django</span>
-            <span>Accounts</span>
-            <span>REST API</span>
-            <span>PostgreSQL</span>
-            <span>AJAX</span>
-            <span>ORM</span>
-            <span>Masonry layout</span>
-            <span>Infinite pagination</span>
+            <span>API</span>
+            <span>Threading</span>
+            <span>Socket</span>
           </div>
         </div>
       </div>
       <div class="project">
         <div class="image-container">
-          <a href="https://github.com/petosbratok/brickbuster-full-stack" target="_blank"><img src="../pics/brickbuster.png" alt="brickbuster-full-stack link"></a>
+          <a href="https://github.com/petosbratok/python-projects/tree/master/Crypto" target="_blank"><img src="../pics/crypto.png" alt="brickbuster-full-stack link"></a>
         </div>
         <div class="project-info">
-          <h3 class="title"><a href="https://github.com/petosbratok/brickbuster-full-stack" target="_blank">Brickbuster game</a></h3>
-          <p>Full-stack web-app that lets you play Tetris-alike game with automatic score saving and leaderboard. The most complicated JavaScript project I ever done. </p>
+          <h3 class="title"><a href="https://github.com/petosbratok/python-projects/tree/master/Crypto" target="_blank">Text encryption tool</a></h3>
+          <p>This program with command-line interface uses Caesar cipther to encrypt and decrypt .txt files.</p>
           <div class="skills">
-            <span>Django</span>
-            <span>JavaScript</span>
-            <span>Accounts</span>
-            <span>REST API</span>
-            <span>PostgreSQL</span>
-            <span>AJAX</span>
-            <span>ORM</span>
-            <span>Dynamic programming</span>
+            <span>Encryption</span>
+            <span>Data processing</span>
+            <span>Dymanic programming</span>
           </div>
         </div>
       </div>
