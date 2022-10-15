@@ -37,7 +37,12 @@ body{
   flex-direction: row;
   justify-content: space-between
 }
-
+.text .main{
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  transition-duration: 0.3s;
+}
 .h2{
   font-weight: 400;
 }
@@ -48,9 +53,6 @@ body{
 .info p{
   margin-top: 3px;
   padding-left: 2.5px;
-}
-.info-nav .description{
-  width: 100%;
 }
 .info-nav{
   width: 328px;
@@ -92,13 +94,18 @@ body{
   background: var(--dark-grey);
 }
 
+.description-container{
+  width: 42%;
+  min-width: 500px;
+  padding-bottom: 50px;
+}
+
 .description{
   box-shadow: 0.5rem 0.5rem var(--dark-grey), -0.5rem -0.5rem #ccc;
   display: flex;
+  height: 100%;
   align-items: flex-end;
-  margin-bottom: 50px;
   background: url('../pics/dark-bg.jpg');
-  width: 42%;
   font-weight: 400;
   font-size: 1.25em;
   letter-spacing: 0.2px;

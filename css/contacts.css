@@ -1,0 +1,20 @@
+.nav-container{
+  padding-top: 22.2px;
+}
+.description{
+  box-shadow: none;
+  background: inherit;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.description li{
+  padding: 5px 10px;
+  font-size: 2em;
+  list-style: none;
+  transition-duration: .5s;
+}
+.description li:hover{
+  color: var(--light-grey);
+  background: var(--dark-grey);
+}

@@ -1,0 +1,39 @@
+@media (max-width: 1050px){
+  .intro{
+    flex-direction: column;
+  }
+  .description{
+    justify-content: flex-end;
+    /* margin: 30px auto; */
+  }
+  .description-container{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 650px){
+  body{
+    font-size: 0.9em;
+  }
+  .description-container{
+    min-width: 0;
+  }
+}
+
+@media (max-width: 450px){
+  .intro{
+      padding: 25px;
+  }
+  .info h2{
+    font-size: 2.5em;
+  }
+  .description-container{
+    margin-bottom: 30px;
+  }
+  .info-nav{
+    width: auto;
+  }
+}

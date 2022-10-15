@@ -1,0 +1,74 @@
+@media (max-width: 800px){
+  .panel{
+    flex-direction: column;
+    height: auto;
+  }
+  .description-container{
+    margin-left: 0;
+  }
+  .intro{
+    margin-top: 0;
+  }
+  .title{
+    margin-bottom: 15px !important;
+  }
+  .arrow-icon{
+    left:auto;
+    right: 4vw;
+    top: 60px;
+  }
+  .image-container{
+    width: 80vw;
+  }
+  .project-info{
+    margin: 0 10vw;
+    margin-top: 20px;
+  }
+  .text{
+    padding: 20px !important;
+  }
+  .description-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+  }
+  .description{
+    text-align: center;
+    width: auto;
+  }
+}
+
+@media (max-width: 650px){
+  .text{
+    padding: 20px !important;
+  }
+  body{
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 450px){
+  .intro h1{
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .text{
+    font-size: 0.9em;
+  }
+  .panel{
+    min-height: 100vh;
+    padding: 25px;
+  }
+  .info h2{
+    font-size: 2.5em;
+  }
+  .description-container{
+    margin-bottom: 30px;
+  }
+  .info-nav{
+    width: auto;
+  }
+}
