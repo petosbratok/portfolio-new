@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: 800px){
+@media (max-width: 900px){
   .panel{
     flex-direction: column;
     height: auto;
