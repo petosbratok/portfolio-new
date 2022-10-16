@@ -1,3 +1,12 @@
+@keyframes loadingAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -15,6 +24,7 @@ a{
 }
 
 body {
+    animation: 0.2s ease-in 0s 1 loadingAnimation;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
