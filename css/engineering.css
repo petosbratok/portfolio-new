@@ -1,6 +1,4 @@
-/* .panel{
-
-} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 
 .description{
   /* background: inherit; */
@@ -21,6 +19,7 @@ img{
 .main{
   font-weight: bold;
   font-size: 1.15em !important;
+  font-family: 'Montserrat', sans-serif !important;
   margin-bottom: 30px;
 }
 .image-container{
@@ -32,12 +31,14 @@ img{
   margin-bottom: 10px;
   color: var(--light-grey);
   list-style: none;
+  font-family: 'Montserrat', sans-serif !important;
 }
 .description a{
   color: var(--light-grey);
   text-decoration: underline;
   transition-duration: .3s;
   padding: 3px 4px;
+  font-family: 'Montserrat', sans-serif !important;
   margin-left: -4px;
 }
 .description a:hover{

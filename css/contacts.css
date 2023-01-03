@@ -10,6 +10,7 @@
 .description li{
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
+  list-style:armenian;
   padding: 5px 10px;
   font-size: 2em;
   list-style: none;
