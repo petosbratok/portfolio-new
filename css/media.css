@@ -24,6 +24,9 @@
 }
 
 @media (max-width: 450px){
+  .nav-container{
+    margin-top: 30px;
+  }
   .intro{
       padding: 25px;
   }

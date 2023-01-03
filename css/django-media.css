@@ -17,7 +17,7 @@
     margin-left: 50px;
   }
   .description-container{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 50px;
     display: flex;
     width: auto;
@@ -26,7 +26,7 @@
   }
   .arrow-icon{
     left: 105px;
-    bottom: 20vh;
+    bottom: 12.5vh;
   }
   .project{
     flex-direction: column;
@@ -82,6 +82,9 @@
 }
 
 @media (max-width: 450px){
+  .nav-container{
+    margin-top: 30px;
+  }
   .arrow-icon{
     left:auto;
     right: 4vw;

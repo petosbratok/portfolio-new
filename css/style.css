@@ -33,7 +33,6 @@ body{
   height: 100vh;
   width: 100%;
   padding: 50px;
-  display: flex;
   flex-direction: row;
   justify-content: space-between
 }
@@ -46,6 +45,9 @@ body{
 .h2{
   font-weight: 400;
 }
+.info{
+  min-width: 330px;
+}
 .info h2{
   font-weight: 300;
   font-size: 3em;
@@ -57,13 +59,22 @@ body{
 .info-nav{
   width: 328px;
 }
+
+.active{
+  background: var(--dark-grey);
+  color: var(--light-grey) !important; 
+}
+
 .nav-container{
   margin-top: 50px;
 }
 
 .nav-container li{
+  width: 75%;
+  /* min-width: 200px; */
   position: relative;
   right: 5px;
+  margin-bottom: 4px;
   padding: 7px 0;
   padding-left: 10px;
   font-weight: 300;
@@ -71,12 +82,18 @@ body{
   font-size: 1.75em;
 }
 
+.nav-container li a{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
 .nav-link:after {
   position: absolute;
   content: '';
   height: 2px;
-  bottom: -4px;
-  width: 50%;
+  bottom: 0px;
+  width: 70%;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0);
@@ -90,7 +107,7 @@ body{
 }
 
 .nav-link:hover:after {
-  width: 70%;
+  width: 100%;
   background: var(--dark-grey);
 }
 
@@ -106,6 +123,7 @@ body{
   height: 100%;
   align-items: flex-end;
   background: url('../pics/dark-bg.jpg');
+  background-size: cover;
   font-weight: 400;
   font-size: 1.25em;
   letter-spacing: 0.2px;

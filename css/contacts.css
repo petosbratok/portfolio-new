@@ -1,6 +1,5 @@
-.nav-container{
-  padding-top: 22.2px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
 .description{
   box-shadow: none;
   background: inherit;
@@ -9,6 +8,8 @@
   width: 100%;
 }
 .description li{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
   padding: 5px 10px;
   font-size: 2em;
   list-style: none;

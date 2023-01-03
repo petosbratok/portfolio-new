@@ -1,9 +1,10 @@
-.nav-container{
-  padding-top: 22.2px;
-}
+/* .panel{
+
+} */
+
 .description{
   /* background: inherit; */
-  margin-left: 100px;
+  margin-left: 70px;
   box-shadow: none;
   width: 100%;
   align-items: flex-start;
@@ -36,10 +37,11 @@ img{
   color: var(--light-grey);
   text-decoration: underline;
   transition-duration: .3s;
-  padding: 3px 6px;
-  margin-left: -2px;
+  padding: 3px 4px;
+  margin-left: -4px;
 }
 .description a:hover{
   color: var(--dark-grey);
   background: var(--light-grey);
+  text-decoration: none;
 }
