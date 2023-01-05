@@ -14,6 +14,14 @@
   }
 }
 
+@media (max-width: 900px){
+  .arrow-icon{
+    left:auto;
+    right: 4vw;
+    top: 60px;
+  }
+}
+
 @media (max-width: 650px){
   body{
     font-size: 0.9em;
@@ -24,6 +32,11 @@
 }
 
 @media (max-width: 450px){
+  .arrow-icon{
+    left:auto;
+    right: 4vw;
+    top: 30px;
+  }
   .nav-container{
     margin-top: 30px;
   }

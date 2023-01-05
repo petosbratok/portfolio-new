@@ -2,18 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Peter Opletaev web developer portfolio website">
+    <meta name="keywords" content="Software engineer, Web developer">
+    <meta name="author" content="Peter Opletaev">
     <title>Peter Opletaev software engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="pics/logo.png" type="image/icon type">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
+    <link rel="stylesheet" href="css/django.css">
+    <link rel="stylesheet" href="css/django-media.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="panel intro">
+    <div class="panel">
       <div class="info-nav">
         <div class="info">
           <h2><a href="https://linkedin.com/in/peter-opletaev-38386b252/">Peter Opletaev</a></h2>
@@ -21,7 +27,7 @@
         </div>
         <div class="nav-container">
           <ul>
-            <li class="active"><a class="nav-link active" href="home.html">Home</a></li>
+            <li class="active"><a class="nav-link active" href="home.html">About</a></li>
             <li><a class="nav-link" href="django.html">Django</a></li>
             <li><a class="nav-link" href="python.html">Python</a></li>
             <li><a class="nav-link" href="data-science.html">Data Science</a></li>
@@ -30,16 +36,55 @@
           </ul>
         </div>
       </div>
+      <img onclick="scrollSmoothTo('intro')" class="arrow-icon rotate" src="pics/arrow.png" alt="">
       <div class="description-container">
         <div class="description">
           <div class="text">
             <p class="main">Hello, My name is Peter!  </p>
             <p>I am a software developer from Russia</p>
-            <p>Coding is my passion.</p>
+            <p>Coding is my passion</p>
           </div>
         </div>
       </div>
     </div>
+    <main>
+      <div class="project">
+        <div class="project-info about">
+          <h3 id="intro" class="title">About</h3>
+          <p>I am a fast-learning, hardworking, responsible developer.</p>
+          <p>I create front-end with Angular/React.</p>
+          <p>Applying Python with such modules as Django, DRF, Redis, Celery.
+          </p>
+          <p>Analyzing data with Pandas, Numpy, Matplotlib, Tensorflow, Sklearn.
+          </p>
+          <p>I used API's provided by Strava, Telegram, Twitch, VK.
+          </p>
+          <p>At university, I study engineering and automation control systems, in particular - SCADA systems.</p>
+          <p>Besides coding, I'm highly interested in economics and road cycling!
+          </p>
+        </div>
+        <div class="project-info jobs">
+          <h3 class="title">Work</h3>
+          <div class="job-instance">
+            <p class="job-title">Software Engineer</p>
+            <p class="company-name"><a href="https://biocadglobal.com">Biocad</a></p>
+            <p class="job-dates">January 2023 - Present</p>
+            <p class="job-duty">- Angular front-end development</p>
+          </div>
+          <div class="job-instance">
+            <p class="job-title">Intern Developer</p>
+            <p class="company-name"><a href="https://infotec.ru">Infotec</a></p>
+            <p class="job-dates">June 2022 - July 2022</p>
+            <p class="job-duty">- Django Rest Framework API development</p>
+            <p class="job-duty">- Data exchange integration with MS Excel</p>
+            <p class="job-duty">- Minor front-end fixes</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Created by <a href="https://github.com/petosbratok">petosbratok</a></p>
+    </footer>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/script.js"></script>

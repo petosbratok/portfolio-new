@@ -1,0 +1,97 @@
+.about p{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.title{
+    font-size: 2.75em !important;
+    text-align: center;
+}
+
+main{
+    /* min-height: 0; */
+}
+
+.jobs{
+    display: flex;
+    flex-direction: column;
+}
+
+.project{
+    justify-content: space-around;
+    padding: 0 70px;
+}
+
+.project p{
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+.project-info{
+    width: 38%;
+    margin: 0;
+    margin-top: 7vh;
+    /* margin: 0 60px; */
+}
+
+.job-title{
+    font-family: 'Raleway', sans-serif  !important;
+    font-weight: bold;
+    font-size: 1.5em !important;
+}
+
+.company-name{
+    font-weight: 500;
+    margin: 0 !important;
+    font-size: 1.25em !important;
+}
+
+.job-dates{
+    font-size: 1em !important;
+    margin-bottom: 10px !important;
+}
+
+.job-instance{
+    margin-bottom: 20px;
+}
+
+.company-name a{
+    display: inline-block;
+    padding: 3px 6px;
+    margin-left: -6px !important;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.company-name a:hover{
+    color: var(--light-grey);
+    background-color: var(--dark-grey);
+}
+
+@media (max-width: 1050px){
+    .title{
+        font-size: 3em !important;
+    }
+    .project{
+        align-items: center;
+    }
+    .about{
+        margin-bottom: 30px;
+    }
+    .project-info{
+        width: 80%;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 800px){
+    .project-info{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    .project{
+        padding: 0 30px;
+        margin-top: 0;
+    }
+}
