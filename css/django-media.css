@@ -132,4 +132,7 @@
   .info-nav{
     width: auto;
   }
+  main{
+    padding-bottom: 30px;
+  }
 }

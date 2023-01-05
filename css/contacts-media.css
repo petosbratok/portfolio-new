@@ -59,6 +59,7 @@
     text-align: center;
   }
   .text{
+    padding-bottom: 50px !important;
     font-size: 0.9em;
   }
   .panel{
@@ -69,7 +70,7 @@
     font-size: 2.5em;
   }
   .description{
-    font-size: 1.15em;
+    font-size: 1.1em;
   }
   .description-container{
     margin-bottom: 0;

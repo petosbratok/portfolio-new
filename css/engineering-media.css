@@ -61,6 +61,9 @@
 }
 
 @media (max-width: 450px){
+  .description{
+    border-radius: 30px;
+  }
   .nav-container{
     margin-top: 30px;
   }
@@ -71,6 +74,7 @@
     font-size: 0.9em;
   }
   .panel{
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    padding: 25px;
   }
 }
