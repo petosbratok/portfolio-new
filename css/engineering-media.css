@@ -41,6 +41,9 @@
   img{
     display: none;
   }
+  .description{
+    height: 100%;
+  }
 }
 
 @media (max-width: 650px){
@@ -62,7 +65,13 @@
 
 @media (max-width: 450px){
   .description{
-    border-radius: 30px;
+    border-radius: 30px !important;
+    width: calc(100vw - 40px) !important;
+    margin-top: 30px;
+    margin-left: -5px;
+  }
+  body{
+    font-size: 0.9em;
   }
   .nav-container{
     margin-top: 30px;
@@ -70,11 +79,8 @@
   .info h2{
     font-size: 2.5em;
   }
-  body{
-    font-size: 0.9em;
-  }
   .panel{
     margin-bottom: 0px;
     padding: 25px;
-  }
+  } 
 }
