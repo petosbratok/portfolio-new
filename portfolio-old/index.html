@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Петр Оплетаев Full-Stack Разработчик</title>
+  </head>
+  <body id="top">
+    <header id="header">
+        <ul class="nav-center">
+          <li><a onclick="scrollSmoothTo('front-end')">Front-end</a></li>
+          <li><a onclick="scrollSmoothTo('back-end')">Back-end</a></li>
+          <li><a onclick="scrollSmoothTo('contacts')">Contacts</a></li>
+        </ul>
+        <div class="nav-right">
+          <a target="_blank" class="header-mail-link" href="mailto:some-mail@mail.ru">opletaevpetr@mail.ru</a>
+        </div>
+    </header>
+    <nav>
+      <button style="display: block;" id="nav-button" class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="ul-container hidden">
+        <ul>
+          <li><a onclick="scrollNavSmoothTo('home'); hamburgerClose()" class="nav-link nav-home">HOME</a></li>
+          <li><a onclick="scrollNavSmoothTo('front-end'); hamburgerClose()" class="nav-link nav-home">FRONT-END</a></li>
+          <li><a onclick="scrollNavSmoothTo('back-end'); hamburgerClose()" class="nav-link nav-home">BACK-END</a></li>
+          <li><a onclick="scrollNavSmoothTo('contacts'); hamburgerClose()" class="nav-link nav-home">CONTACTS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="home" class="who">
+        <h1 id="description"></h1>
+        <h1>My name is Peter Opletaev.</h1>
+        <p>I am a software developer based Russia. <br> Having done a great variety of projects, I can develop, optimise, redesign and update any kind of web-service either single-handedly or with a team of professionals.</p>
+        <div class="skills">
+          <div id="skill-html" class="skill floating">
+            <i class="fab fa-html5"></i>
+            <!-- <img src="img/html.svg" alt=""> -->
+          </div>
+          <div id="skill-css" class="skill floating">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div id="skill-js" class="skill floating">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <div id="skill-python" class="skill floating">
+            <i class="fab fa-python"></i>
+          </div>
+          <div id="skill-api" class="skill floating">
+            <img src="img/api.svg" alt="">
+          </div>
+          <div id="skill-sql" class="skill floating">
+            <img src="img/sql.svg" alt="">
+          </div>
+          <div id="skill-react" class="skill floating">
+            <i class="fab fa-react"></i>
+          </div>
+        </div>
+        <a onclick="scrollSmoothTo('front-end')"><i class="fas fa-chevron-down"></i></a>
+    </div>
+    <div id="front-end" class="front-end">
+      <div class="projects">
+        <h2>front <br> end <br> projects</h2>
+        <div id="border-wrap-1" class="border-wrap">
+          <div id="project-1" class="project">
+            <div class="main">
+              <h3>Tetris</h3>
+              <p>My view and recreation of the worldwide known Tetris game. All done in plain JS. Play it now by the link below!</p>
+            </div>
+            <div class="project-link">
+              <a target=”_blank” href="https://tetris2021.netlify.app">tetris2021.netlify.app</a>
+            </div>
+          </div>
+        </div>
+        <div id="border-wrap-2" class="border-wrap">
+          <div id="project-2" class="project">
+            <div class="main">
+              <h3>Trainer's website</h3>
+              <p>Simple personal website that provides information on training services. Adapted for all kinds of screens.</p>
+            </div>
+            <div class="project-link">
+              <a target=”_blank” href="https://personal-trainer-page.netlify.app">personal-trainer-page.netlify.app</a>
+            </div>
+          </div>
+        </div>
+        <div id="border-wrap-3"class="border-wrap">
+          <div id="project-3" class="project">
+            <div class="main">
+              <h3>Strava activities tracking</h3>
+              <p>Custom strava application with various speed and distance stats combined with roadmap. Measures cycling and running info!</p>
+            </div>
+            <div class="project-link">
+              <a id="back-end" target=”_blank” href="https:/strats.netlify.app">strats.netlify.app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="back-end-h3"><span >backend</span><span>|</span> <span>backend</span><span>|</span> <span>backend</span><span>|</span><span>backend</span><span>|</span> <span>backend</span><span>|</span><span>backend</span><span>|</span><span>backend</span><span>|</span><span>backend</span></h3>
+    </div>
+    <div class="back-end">
+        <div class="carousel js-flickity"
+          data-flickity-options='{"wrapAround": false,"contain": true, "prevNextButtons": false,"pageDots": false}'>
+          <div  id="cell-1" class="carousel-cell">
+            <div class="cell-content">
+              <div class="cell-left">
+                <h3 class="caption">Twitter-like social network</h3>
+                <p class="description">Social network with all of its attributes: posts, accounts, likes, you named it! Comes with pinterest inspired post layout. <br>Heavily based on Python's Django framework.</p>
+              </div>
+              <div class="cell-right">
+                <ul class="skills">
+                  <li>Python</li>
+                  <li>Django</li>
+                  <li>jQuery</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-link">
+              <a href="https://peteropletaev.pythonanywhere.com">peteropletaev.pythonanywhere.com</a>
+            </div>
+          </div>
+          <div  id="cell-2" class="carousel-cell">
+            <div class="cell-content">
+              <div class="cell-left">
+                <h3 class="caption">Keeno. A ticket for endless memories</h3>
+                <p class="description">Movie theater website that provides customer an ability to reserve a seat on any upcoming movie in a very conveinient manner.<br> Uses Django with a gentle JavaScript touch</p>
+              </div>
+              <div class="cell-right">
+                <ul class="skills">
+                  <li>PostgreSQL</li>
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                  <li>Django</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-link">
+              <a href="https://keenoticket.pythonanywhere.com">keenoticket.pythonanywhere.com</a>
+            </div>
+          </div>
+          <div  id="cell-4" class="carousel-cell">
+            <div class="cell-content">
+              <div class="cell-left">
+                <h3 class="caption">Tetris - now w/ backend</h3>
+                <p class="description">On the one hand, you have a complicated Tetris code, created manually in JS. On the other, django-based backend so you could share your achievments with others. <br>Made with Django.</p>
+              </div>
+              <div class="cell-right">
+                <ul class="skills">
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                  <li>Django</li>
+                  <li>SQLite</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+            </div>
+            </div>
+            <div class="project-link">
+              <a href="https://brickbuster.pythonanywhere.com">brickbuster.pythonanywhere.com</a>
+            </div>
+          </div>
+          <div  id="cell-3" class="carousel-cell">
+            <div class="cell-content">
+              <div class="cell-left">
+                <h3 class="caption">Virtual library</h3>
+                <p class="description">Ultimate bookstore/library simulator. Take, read, return a book - all in one place! But first, create an account and get a bookpass. <br> Uses node.js and react.</p>
+              </div>
+              <div class="cell-right">
+                <ul class="skills">
+                  <li>Node.js</li>
+                  <li>MySQL</li>
+                  <li>HTML</li>
+                  <li>React</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-link">
+              <a href="#">files were lost.</a>
+            </div>
+          </div>
+          <div style="width: 0" class="carousel-cell"></div>
+        </div>
+    </div>
+    <div class="circle-animation"></div>
+    <div id="contacts" class="about">
+      <div class="">
+        <div class="about-inner">
+          <div class="about-left">
+            <ul class="">
+              <li>Python</li>
+              <li>Django</li>
+              <li>SQLite</li>
+              <li>MySQL</li>
+              <li>Node.js</li>
+              <li>API</li>
+            </ul>
+          </div>
+          <div class="about-middle">
+            <a href="https://github.com/petosbratok" id="mail-link">github/petosbratok</a>
+          </div>
+          <div class="about-right">
+            <ul class="">
+              <li>HTML</li>
+              <li>jQuery</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>Responsive</li>
+              <li>React</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a onclick="scrollSmoothTo('top')" class="btn-circle">
+        <div id="btn-circle"><i class="fas fa-arrow-up"></i></div>
+        <!-- <span class="sign-letter">Petosbratok</span> -->
+      </a>
+    </footer>
+  </body>
+  <script></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/main-script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://kit.fontawesome.com/97be8968f0.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
